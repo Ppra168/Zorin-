@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zorin Homestay</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background: #1f1f1f;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00ffc3;
+    }
+    .tagline {
+      font-size: 1.1rem;
+      margin-top: 5px;
+      color: #aaa;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 600px;
+      text-align: center;
+    }
+    form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffc355;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 12px 25px;
+      background: #00ffc3;
+      color: #000;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zorin Homestay</h1>
+    <p class="tagline">“Stay Different. Stay Real.”</p>
+  </header>
+  <main>
+    <h2>Book Your Escape</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="date" required />
+      <textarea placeholder="Any notes or requests..." rows="4"></textarea>
+      <button type="submit">Request Booking</button>
+    </form>
+  </main>
+  <footer>
+    © 2025 Zorin Homestay | Built by V4 Mindset 🧠🔥
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Booking Request Sent! We'll contact you soon.");
+    }
+  </script>
+</body>
+</html>
